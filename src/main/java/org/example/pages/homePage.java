@@ -17,7 +17,7 @@ public class homePage extends BasePage {
     private WebElement elInput;
 
     @Getter
-    @FindBy(xpath = "//input[@class='search__input js-search-input has-dropdown']")
+    @FindBy(xpath = "//li[@class='breadcrumbs__item'][last()]")
     private WebElement el;
     
     public homePage(WebDriver driver) {
