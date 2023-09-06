@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 import static org.example.untils.WaitUtils.waitUntilElementISVisible;
 
-public class homePage extends BasePage {
+public class HomePage extends BasePage {
     private  final String HOME_PAGE = "https://www.coolblue.nl/en";
 
     @Getter
@@ -20,7 +20,7 @@ public class homePage extends BasePage {
     @FindBy(xpath = "//li[@class='breadcrumbs__item'][last()]")
     private WebElement el;
     
-    public homePage(WebDriver driver) {
+    public HomePage(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
     }
