@@ -13,8 +13,7 @@
     </test>-->
     <test name="Regression">
         <classes>
-            <class name="testNg.HomeTest2
-"/>
+            <class name="testNg.HomeTest"/>
         </classes>
     </test>
 </suite>
