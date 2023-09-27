@@ -5,7 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class HomeTest2 extends BaseTest{
-    @Test
+        @Test
     public void IsValue() {
         HomePage2 homePage2 = new HomePage2(driver);
         homePage2.open();

@@ -7,7 +7,7 @@ import java.util.Properties;
 
 
 public class ConfigProvider {
-    private static final String CONFIG_PATH = "config.properties";
+    private static final String CONFIG_PATH = "сonfig.properties";
     private static final Properties properties = initProperties();
     @Getter
     private static final String BROWSER = properties.getProperty("browser");

@@ -25,7 +25,7 @@ public class WebDriverFactory {
             case SAFARI -> getSafariDriver();
             case FIREFOX -> getFirefoxDriver();
 
-            default -> throw new IllegalCallerException("Wrong browser was chosen");
+                default -> throw new IllegalCallerException("Wrong browser was chosen");
         };
 
     }
