@@ -13,7 +13,7 @@
     </test>-->
     <test name="Regression">
         <classes>
-            <class name="testNg.HomeTest"/>
+        <class name="cucumber.CucumberTestRunner"/>
         </classes>
     </test>
 </suite>
