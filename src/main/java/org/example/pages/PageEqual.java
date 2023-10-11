@@ -7,32 +7,26 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import java.util.List;
-
 import static org.example.untils.WaitUtils.waitUntilElementISVisible;
 
-public class HomePage3 extends BasePage {
+public class PageEqual extends BasePage {
     private  final String HOME_PAGE3 = "https://www.coolblue.nl/en";
 
     @Getter
     @FindBy(xpath = "//input[@id='search_query']")
     private WebElement elIput;
+    @Getter
+    @FindBy(xpath = "//div[@class=\"section--2\"]//h1" )
+    private WebElement elName ;
+
 
     @Getter
-    @FindBy(xpath = "//div[@class='pb--2 pb--0@sm section--4 section--6@sm']//button[@class='button button--order button--full-width']")
-    private WebElement elCockies;
-
-    @Getter
-    @FindBy(xpath = "//div[@class='pb--2 pb--0@sm section--4 section--6@sm']//button[@class='button button--order button--full-width']")
-    private WebElement elChtoot;
-
-    @Getter
-    @FindBy(xpath = "//div[@class='content-card-from-size-m']//div[@class=\"section--6\"][1]")
-    private WebElement el;
+    @FindBy(xpath = "//li[@class='breadcrumbs__item'][last()]" )
+    private WebElement elSearchResult ;
 
 
 
-    public HomePage3(WebDriver driver) {
+    public PageEqual(WebDriver driver) {
         super(driver);
         PageFactory.initElements(driver, this);
     }

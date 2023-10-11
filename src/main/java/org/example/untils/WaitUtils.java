@@ -16,11 +16,11 @@ public class WaitUtils {
     }
 
     public static void waitUntilElementISVisible(WebDriver driver, WebElement webElement){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(9));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.visibilityOf(webElement));
     }
     public static void waitUntilElementISClickable(WebDriver driver, WebElement webElement){
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(9));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         wait.until(ExpectedConditions.elementToBeClickable(webElement));
     }
 
